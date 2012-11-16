@@ -1,0 +1,21 @@
+BookShop\Entity\User:
+    type: entity
+    table: user
+    repositoryClass: BookShop\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        username:
+            type: string
+            length: 255
+        password:
+            type: string
+        salt:
+            type: string
+            
+    manyToMany:
+        cart:
+            targetEntity: BookShop\Entity\Book

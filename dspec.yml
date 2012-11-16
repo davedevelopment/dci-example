@@ -1,0 +1,6 @@
+default:
+    formatters:
+        spec: ~
+    extensions:
+        hamcrest: 
+            hamcrest.globals: true

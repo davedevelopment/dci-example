@@ -1,0 +1,23 @@
+default:
+    extensions:
+        Behat\MinkExtension\Extension:
+            base_url:     http://localhost:10001
+            goutte: ~
+            default_session: goutte
+                
+    paths:
+        features:                  "%behat.paths.base%/features"
+        bootstrap:                 "%behat.paths.base%/features/bootstrap"
+    formatter:
+        name:                      'pretty'
+        parameters:
+            decorated:              true
+            verbose:                false
+            time:                   true
+            language:               'en'
+            output_path:            null
+            multiline_arguments:    true
+            paths:                  true
+            output_styles:
+                comment: ['blue']
+

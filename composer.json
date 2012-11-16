@@ -1,0 +1,37 @@
+{
+    "require": {
+        "php": ">=5.3.1",
+        "doctrine/dbal": "2.4.*@dev",
+        "doctrine/orm": "2.4.*@dev",
+        "silex/silex": "1.0.*@dev",
+        "symfony/security": "2.1.*",
+        "symfony/doctrine-bridge": "2.1.*"
+    },
+
+    "require-dev": {
+        "behat/behat": "2.4.*@stable",
+        "behat/mink": "1.4.*@stable",
+        "behat/mink-extension": "*@dev",
+        "behat/mink-goutte-driver": "*@dev",
+        "fabpot/goutte": "*@dev",
+        "mockery/mockery": "*@dev",
+        "davedevelopment/dspec": "*@dev",
+        "davedevelopment/hamcrest-php": "*@dev"
+    },
+
+    "config": {
+        "bin-dir": "bin/"
+    },
+
+    "autoload": {
+        "psr-0": {
+            "BookShop": "src"
+        }
+    },
+
+    "repositories": [
+        {"type":"git", "url":"file:///home/davem/src/dspec"},
+        {"type": "vcs", "url": "http://github.com/davedevelopment/hamcrest-php"}
+    ]
+
+}

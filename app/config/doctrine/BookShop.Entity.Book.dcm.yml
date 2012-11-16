@@ -1,0 +1,12 @@
+BookShop\Entity\Book:
+    type: entity
+    table: book
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 50
