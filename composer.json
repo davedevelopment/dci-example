@@ -30,7 +30,7 @@
     },
 
     "repositories": [
-        {"type":"git", "url":"file:///home/davem/src/dspec"},
+        {"type": "vcs", "url": "https://github.com/davedevelopment/dspec"},
         {"type": "vcs", "url": "http://github.com/davedevelopment/hamcrest-php"}
     ]
 
